@@ -1,4 +1,4 @@
-FROM node:9.20
+FROM node:9.11.2
 MAINTAINER pureye4u<pureye4u@gmail.com>
 
 RUN mkdir -p /app
