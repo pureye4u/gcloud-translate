@@ -8,6 +8,4 @@ ADD ./credentials.json /app
 RUN npm install
 RUN export GOOGLE_APPLICATION_CREDENTIALS="./credentials.json"
 
-EXPOSE 3000
-
 CMD ["npm", "start"]
