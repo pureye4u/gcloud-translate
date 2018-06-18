@@ -15,7 +15,7 @@ git checkout --track origin/${TARGET}
 
 git pull
 
-cp ~/credentials/google/29cm-global.json .
+cp ~/credentials/google/29cm-global.json ./credentials.json
 
 docker stop ${CONTAINER_NAME}
 
