@@ -5,6 +5,8 @@ const translate = require('./translate.js');
 const app = express();
 
 app.get('/translate/:lang/:text', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "localhost");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
     const lang = req.params.lang;
     const text = req.params.text;
     console.log(translate);
